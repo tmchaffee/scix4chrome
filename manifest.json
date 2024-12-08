@@ -1,0 +1,10 @@
+{
+  "manifest_version": 1,
+  "name": "SciX4Chrome",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "action": {
+    "default_popup": "query.html",
+    "default_icon": "scix_lens.png"
+  }
+}
