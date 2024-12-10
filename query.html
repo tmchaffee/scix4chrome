@@ -1,6 +1,21 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./popup.css" />
+
+  </head>
   <body>
-    SciX
-    Search
+    <h1>SciX</h1>
+    <form id="toolbarform">
+    <input type="search" id ="scixtoolbarquery" name="scixtoolbarq" label="scix search input"> Search</input>
+    <input type="submit" id="scixtoolbarsubmit" name="scixtoolbars" label="scix search submit button"></input>
+  </form>
+    <br />
+    <h1> Results:</h1>
+    <div id="results"></div>
+    <script src="scripts/apiscript.js" type="module"></script>
   </body>
 </html>

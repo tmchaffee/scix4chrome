@@ -1,10 +1,36 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 3,
   "name": "SciX4Chrome",
   "description": "Base Level Extension",
   "version": "1.0",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>" 
+  ],
   "action": {
     "default_popup": "query.html",
-    "default_icon": "scix_lens.png"
+    "default_icon": "images/lens48.png"
+            },
+  "icons": {
+    "16": "images/lens16.png",
+    "32": "images/lens32.png",
+    "48": "images/lens48.png",
+    "128": "images/lens128.png"
+  },
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/title.js"],
+      "matches":
+      [
+        "<all_urls>"
+      ]
+    }
+  ]
   }
-}
